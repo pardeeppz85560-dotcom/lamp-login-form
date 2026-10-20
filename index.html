@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lamp Login Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="login-card">
+
+    <section class="lamp-panel" id="lampPanel">
+      <div class="brand">
+        <span class="brand-icon">♧</span>
+        <span>Lamp</span>
+      </div>
+
+      <h2>Bright Ideas.<br>Better Tomorrow.</h2>
+      <p class="intro">
+        Log in to your account and continue your journey with us.
+      </p>
+
+      <div class="scene" id="scene">
+        <div class="light-beam"></div>
+
+        <div class="lamp">
+          <div class="shade"></div>
+          <div class="bulb"></div>
+          <div class="arm arm-one"></div>
+          <div class="joint joint-one"></div>
+          <div class="arm arm-two"></div>
+          <div class="joint joint-two"></div>
+          <div class="stand"></div>
+          <div class="base"></div>
+        </div>
+
+        <div class="desk">
+          <div class="book book-one">Better Ideas</div>
+          <div class="book book-two">Brighter Future</div>
+        </div>
+        <div class="plant">
+          <span>🌿</span>
+          <div class="pot"></div>
+        </div>
+      </div>
+
+      <button class="lamp-switch" id="lampSwitch" type="button">
+        <span id="switchIcon">☀</span>
+        <span id="switchText">Turn lamp off</span>
+      </button>
+    </section>
+
+    <section class="form-panel">
+      <div class="form-content">
+        <p class="eyebrow">YOUR PERSONAL SPACE</p>
+        <h1>Welcome Back!</h1>
+        <p class="subtitle">Sign in to your Lamp account</p>
+
+        <form id="loginForm">
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+            autocomplete="email"
+            required
+          >
+
+          <label for="password">Password</label>
+          <div class="password-wrap">
+            <input
+              type="password"
+              id="password"
+              placeholder="Enter your password"
+              minlength="6"
+              autocomplete="current-password"
+              required
+            >
+            <button type="button" id="togglePassword"
+              class="eye-button" aria-label="Show password">
+              Show
+            </button>
+          </div>
+
+          <div class="form-options">
+            <label class="remember">
+              <input type="checkbox" id="remember">
+              <span>Remember me</span>
+            </label>
+            <a href="#" id="forgotLink">Forgot password?</a>
+          </div>
+
+          <p class="message" id="message" role="status"></p>
+
+          <button class="login-button" type="submit">
+            Login <span>→</span>
+          </button>
+        </form>
+
+        <div class="separator"><span>OR</span></div>
+
+        <button class="google-button" type="button" id="googleButton">
+          <span class="google-letter">G</span>
+          Continue with Google
+        </button>
+
+        <p class="signup-text">
+          Don't have an account?
+          <button type="button" id="signupButton">Sign up</button>
+        </p>
+
+        <p class="footer-note">Designed to brighten your day ✨</p>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
